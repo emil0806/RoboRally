@@ -61,6 +61,8 @@ public class GameController {
             currentPlayer.setSpace(space);
             space.setPlayer(currentPlayer);
 
+            currentPlayer.setMoveCounter(currentPlayer.getMoveCounter()+1);
+
             int nextPlayerNumber = (board.getPlayerNumber(currentPlayer) + 1) % board.getPlayersNumber();
 
             board.setCurrentPlayer(board.getPlayer(nextPlayerNumber));

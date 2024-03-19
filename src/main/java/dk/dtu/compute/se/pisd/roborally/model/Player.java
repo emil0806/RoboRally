@@ -47,6 +47,7 @@ public class Player extends Subject {
 
     private CommandCardField[] program;
     private CommandCardField[] cards;
+    private int moveCounter;
 
     public Player(@NotNull Board board, String color, @NotNull String name) {
         this.board = board;
@@ -79,6 +80,11 @@ public class Player extends Subject {
             }
         }
     }
+
+    public void setMoveCounter(int move){
+        this.moveCounter = move;
+    }
+    public int getMoveCounter(){ return moveCounter; }
 
     public String getColor() {
         return color;
