@@ -47,7 +47,7 @@ public class GameController {
 
     /*
     @author David Wellejus
-    @param moves robot from one field to another
+    @param space the space to which the current player should move
     @return no return value, but updates players/robots position
      */
     public void moveCurrentPlayerToSpace(@NotNull Space space)  {
