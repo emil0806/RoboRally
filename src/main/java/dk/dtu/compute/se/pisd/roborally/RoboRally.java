@@ -43,7 +43,7 @@ public class RoboRally extends Application {
 
     private Stage stage;
     private BorderPane boardRoot;
-    // private RoboRallyMenuBar menuBar;
+    //private RoboRallyMenuBar menuBar;
 
     // private AppController appController;
 
