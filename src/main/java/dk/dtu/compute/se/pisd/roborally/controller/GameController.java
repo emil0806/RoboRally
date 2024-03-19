@@ -202,24 +202,43 @@ public class GameController {
         }
     }
 
-    // TODO Task2
+    /**
+     * ...
+     * @author Emil Lauritzen, s231331@dtu.dk
+     * @param player player who should be moved
+     *
+     */
     public void moveForward(@NotNull Player player) {
-
+        player.setSpace(board.getNeighbour(player.getSpace(), player.getHeading()));
     }
 
-    // TODO Task2
+    /**
+     * ...
+     * @author Emil Lauritzen, s231331@dtu.dk
+     * @param player player who should be moved
+     */
+
     public void fastForward(@NotNull Player player) {
-
+        moveForward(player);
+        moveForward(player);
     }
 
-    // TODO Task2
+    /**
+     * ...
+     * @author Emil Lauritzen, s231331@dtu.dk
+     * @param player player whose heading should turn right
+     */
     public void turnRight(@NotNull Player player) {
-
+        player.setHeading(player.getHeading().next());
     }
 
-    // TODO Task2
+    /**
+     * ...
+     * @author Emil Lauritzen, s231331@dtu.dk
+     * @param player player whose heading should turn left
+     */
     public void turnLeft(@NotNull Player player) {
-
+        player.setHeading(player.getHeading().prev());
     }
 
     public boolean moveCards(@NotNull CommandCardField source, @NotNull CommandCardField target) {
