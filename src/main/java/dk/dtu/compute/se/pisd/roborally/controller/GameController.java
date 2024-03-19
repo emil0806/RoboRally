@@ -57,7 +57,12 @@ public class GameController {
         }
     }
 
-    // XXX: implemented in the current version
+
+    /*
+    @author David Wellejus
+    @param moves robot from one field to another
+    @return no return value, but updates players/robots position
+     */
     public void startProgrammingPhase() {
         board.setPhase(Phase.PROGRAMMING);
         board.setCurrentPlayer(board.getPlayer(0));
