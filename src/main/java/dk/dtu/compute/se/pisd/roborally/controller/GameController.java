@@ -44,6 +44,12 @@ public class GameController {
      *
      * @param space the space to which the current player should move
      */
+
+    /*
+    @author David Wellejus
+    @param moves robot from one field to another
+    @return no return value, but updates players/robots position
+     */
     public void moveCurrentPlayerToSpace(@NotNull Space space)  {
         if(space.getPlayer() == null){
             Player currentPlayer = board.getCurrentPlayer();
@@ -57,12 +63,6 @@ public class GameController {
         }
     }
 
-
-    /*
-    @author David Wellejus
-    @param moves robot from one field to another
-    @return no return value, but updates players/robots position
-     */
     public void startProgrammingPhase() {
         board.setPhase(Phase.PROGRAMMING);
         board.setCurrentPlayer(board.getPlayer(0));
